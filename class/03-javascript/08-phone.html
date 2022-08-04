@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <script src="./08-phone.js"></script>
+</head>
+<body>
+      <div class="register">
+            <div class="phone">
+                  <input type="text" id="phone01" class="phone" maxlength="3" oninput="phoneFocusMove(), phoneDisabled()">
+                  <input type="text" id="phone02"  class="phone" maxlength="4" oninput="phoneFocusMove2(), phoneDisabled()">
+                  <input type="text" id="phone03"  class="phone" maxlength="4" oninput="phoneDisabled()">
+                  <button id="getNum" disabled ="true">인증번호 받기</button>
+            </div>
+            <div class="number">
+                  <span id="phoneNum">000000</span>
+                  <button id="confirmNum">인증번호 확인</button>
+            </div>
+      </div>
+</body>
+</html>
