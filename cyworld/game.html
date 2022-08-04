@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./styles/game.css">
+      <script src="./js/game.js"></script>
+      <title>GAME</title>
+</head>
+<body>
+      <div class="wrapper">
+            <div class="game__header">
+                  <div class="game__title">
+                        <h2>GAME</h2>
+                        <span>TODAY CHOICE</span>
+                  </div>
+                  <div class="game__body">
+                        <div class="game_container">
+                              <div class="game_content">
+                                    <div class="game_title">
+                                          <img src="./images/train.png" alt="">
+                                          <h3>끝말잇기</h3>
+                                    </div>
+                                    <p class="game_p">제시어 : <span>뉴비즈코드</span></p>
+                                    <div class="game_input">
+                                          <input type="text" placeholder="단어를 입력해주세요.">
+                                          <button>검색</button>
+                                    </div>
+                                    <div class="game_result">
+                                          <span>결과!</span>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="game_container">
+                              <div class="game_content">
+                                    <div class="game_title">
+                                          <img src="./images/lotto.png" alt="">
+                                          <h3>LOTTO</h3>
+                                    </div>
+                                    <p class="game_p">버튼을 누르세요</p>
+                                    <div class="game_number">
+                                          <ul class="lotto_num">
+                                               
+                                          </ul>
+                                    </div>
+                                    <div class="game_button">
+                                          <button onclick="getLottoNum()">BUTTON</button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</body>
+</html>
