@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <title>코드캠프 회원가입</title>
+      <link rel="stylesheet" href="./final.css">
+      <script src="./final.js"></script>
+</head>
+<body>
+      <div class="register_container">
+            <div class="register">
+                  <h1 class="register__title">코드캠프 회원가입</h1>
+                  <form action="" id="register__form">
+                        <div class="register__input">
+                              <input type="text" id="registerId" class="register__input_common" placeholder="이메일을 입력해 주세요.">
+                        </div>
+                        <div class="register__input">
+                              <input type="text" id="registerName" class="register__input_common" placeholder="이름을 입력해 주세요.">
+                        </div>
+                        <div class="register__input">
+                              <input type="text" id="registerPw01" class="register__input_common" placeholder="비밀번호를 입력해 주세요.">
+                        </div>
+                        <div class="register__input">
+                              <input type="text" id="registerPw02" class="register__input_common" placeholder="비밀번호를 다시 입력해 주세요.">
+                        </div>
+                        <div class="register__input__phone">
+                              <div class="input__phone">
+                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                              </div>
+                              <span class="phone_line"></span>
+                              <div class="input__phone">
+                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                              </div>
+                              <span class="phone_line"></span>
+                              <div class="input__phone">
+                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                              </div>
+                        </div>
+                        <div class="phoneNum__common">
+                              <span id="phoneNumView" class="phoneNumCommon">000000</span>
+                              <button class="phoneNumButton">인증번호 전송</button>
+                        </div>
+                        <div class="phoneNum__common">
+                              <span id="phoneNumTime" class="phoneNumCommon">3:00</span>
+                              <button class="phoneNumButton phoneNumButton2">인증완료</button>
+                        </div>
+                        <div class="register__selectBox">
+                              <select name="" id="areaSelect" disabled>
+                                    <option value="">서울</option>
+                                    <option value="">경기</option>
+                                    <option value="">인천</option>
+                              </select>
+                        </div>
+                        <div class="register__gender">
+                              <div class="gerder__box">
+                                    <input type="checkbox" id="girl">
+                                    <label for="girl">여성</label>
+                              </div>
+                              <div class="gerder__box">
+                                    <input type="checkbox" id="man">
+                                    <label for="man">남성</label>
+                              </div>
+                        </div>
+                        <input type="submit" id="register__submit" value="가입하기">
+                  </form>
+            </div>
+      </div>
+</body>
+</html>

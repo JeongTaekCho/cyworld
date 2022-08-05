@@ -1,0 +1,146 @@
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+a{
+      text-decoration: none;
+}
+span{
+      vertical-align: baseline;
+}
+
+
+.register_container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 118px;
+}
+.register{
+      width: 540px;
+      height: 960px;
+      border: 1px solid #AACDFF;
+      padding: 55px 80px;
+      box-shadow: 0 0 15px 5px #AACDFF;
+      border-radius: 15px;
+}
+.register__title{
+      font-size: 32px;
+      font-weight: 700;
+      color: #0068FF;
+      margin-bottom: 60px;
+}
+.register__input_common{
+      width: 380px;
+      height: 60px;
+      border: 1px solid #d2d2d2;
+      border-radius: 7px;
+      padding: 18px 14px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #797979;
+      margin-bottom: 20px;
+}
+.register__input_common:focus{
+      border: 1px solid #0068FF;
+}
+#register__form{
+      display: flex;
+      flex-direction: column;
+}
+.input__phone__common{
+      width: 100px;
+      height: 40px;
+      border-radius: 7px;
+      padding: 18px 14px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #797979;
+      border: 1px solid #d2d2d2;
+}
+.register__input__phone{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+}
+.input__phone__common:focus{
+      border: 1px solid #0068FF;
+}
+.phone_line{
+      display: block;
+      width: 11px;
+      height: 1px;
+      background-color: #111;
+}
+.phoneNum__common{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 21px;
+      margin-bottom: 20px;
+}
+.phoneNumCommon{
+      font-size: 18px;
+      font-weight: 400;
+      color: #0068FF;
+}
+.phoneNumButton{
+      width: 120px;
+      height: 40px;
+      border: 1px solid #d2d2d2;
+      border-radius: 7px;
+      background-color: #fff;
+      outline: none;
+      font-size: 16px;
+      font-weight: 400;
+      color: #0068FF;
+      cursor: pointer;
+}
+.phoneNumButton2{
+      border: none;
+      background-color: #0068FF;
+      color: #fff;
+}
+#areaSelect{
+      width: 380px;
+      height: 60px;
+      border: 1px solid #d2d2d2;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #797979;
+      padding: 18px 14px;
+}
+.register__gender{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 32px 0;
+      border-bottom: 1px solid #e6e6e6;
+      margin-bottom: 20px;
+}
+.gerder__box{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      align-items: center;
+}
+#register__submit{
+      width: 380px;
+      height: 75px;
+      border: 1px solid #0068ff;
+      border-radius: 7px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #0068FF;
+      cursor: pointer;
+      background-color: #fff;
+}
