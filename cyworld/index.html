@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="./styles/index.css">
       <title>조정택님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
       <script src="https://kit.fontawesome.com/04963f26fa.js" crossorigin="anonymous"></script>
+      <script src="./js/index.js"></script>
 </head>
 <body>
       <div class="background">
@@ -62,14 +63,19 @@
                               <div class="wrapper__right__head">
                                     <div class="right__head__container">
                                           <h1 class="right__head__title">
-                                                싸이좋은 사람들, 싸이월드
+                                                사이좋은 사람들, 싸이월드
                                           </h1>
                                           <a href="#void" class="setting">사생활보호설정<span>►</span></a>
                                     </div>
                               </div>
                               <div class="wrapper__right__body">
-                                    <iframe src="./game.html" frameborder="0"></iframe>
+                                    <iframe src="./home.html" frameborder="0" id="viewFrame"></iframe>
                               </div>
+                        </div>
+                        <div class="navigation">
+                              <div class="menu" id="menuHome" onclick="goHome()">홈</div>
+                              <div class="menu" id="menuGame" onclick="goGame()">게임</div>
+                              <div class="menu" id="menuJukebox" onclick="goJukebox()">쥬크박스</div>
                         </div>
                   </div>
             </div>
