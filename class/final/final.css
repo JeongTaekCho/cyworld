@@ -9,6 +9,18 @@ a{
 span{
       vertical-align: baseline;
 }
+.phoneNumButton:disabled{
+      border: 1px solid #d2d2d2;
+      background-color: #eee;
+      color: #d2d2d2;
+      cursor: auto;
+}
+#register__submit:disabled{
+      border: 1px solid #d2d2d2;
+      background-color: #eee;
+      color: #d2d2d2;
+      cursor: auto;
+}
 
 
 .register_container{
@@ -21,7 +33,6 @@ span{
 }
 .register{
       width: 540px;
-      height: 960px;
       border: 1px solid #AACDFF;
       padding: 55px 80px;
       box-shadow: 0 0 15px 5px #AACDFF;
@@ -33,6 +44,21 @@ span{
       color: #0068FF;
       margin-bottom: 60px;
 }
+.register__input{
+      margin-bottom: 20px;
+}
+.errorCommon{
+      display: block;
+      text-align: center;
+      margin-top: 3px;
+      font-size: 14px;
+      font-weight: 400;
+      color: red;
+}
+#errorPhone{
+      margin-top: -17px;
+      margin-bottom: 20px;
+}
 .register__input_common{
       width: 380px;
       height: 60px;
@@ -42,7 +68,6 @@ span{
       font-size: 16px;
       font-weight: 400;
       color: #797979;
-      margin-bottom: 20px;
 }
 .register__input_common:focus{
       border: 1px solid #0068FF;
@@ -126,6 +151,11 @@ span{
       padding: 32px 0;
       border-bottom: 1px solid #e6e6e6;
       margin-bottom: 20px;
+      position: relative;
+}
+#errorGender{
+      position: absolute;
+      bottom: 10px;
 }
 .gerder__box{
       display: flex;

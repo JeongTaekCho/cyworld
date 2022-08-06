@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <title>코드캠프 회원가입</title>
       <link rel="stylesheet" href="./final.css">
-      <script src="./final.js"></script>
+
 </head>
 <body>
       <div class="register_container">
@@ -13,57 +13,66 @@
                   <form action="" id="register__form">
                         <div class="register__input">
                               <input type="text" id="registerId" class="register__input_common" placeholder="이메일을 입력해 주세요.">
+                              <span id="errorEmail" class="errorCommon"></span>
                         </div>
                         <div class="register__input">
                               <input type="text" id="registerName" class="register__input_common" placeholder="이름을 입력해 주세요.">
+                              <span id="errorName" class="errorCommon"></span>
                         </div>
                         <div class="register__input">
-                              <input type="text" id="registerPw01" class="register__input_common" placeholder="비밀번호를 입력해 주세요.">
+                              <input type="password" id="registerPw01" class="register__input_common" placeholder="비밀번호를 입력해 주세요.">
+                              <span id="errorPw01" class="errorCommon"></span>
                         </div>
                         <div class="register__input">
-                              <input type="text" id="registerPw02" class="register__input_common" placeholder="비밀번호를 다시 입력해 주세요.">
+                              <input type="password" id="registerPw02" class="register__input_common" placeholder="비밀번호를 다시 입력해 주세요.">
+                              <span id="errorPw02" class="errorCommon"></span>
                         </div>
                         <div class="register__input__phone">
                               <div class="input__phone">
-                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                                    <input type="text" id="registerPhone01" class="input__phone__common" maxlength="3" oninput="movePhone01()">
                               </div>
                               <span class="phone_line"></span>
                               <div class="input__phone">
-                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                                    <input type="text" id="registerPhone02" class="input__phone__common" maxlength="4" oninput="movePhone02()">
                               </div>
                               <span class="phone_line"></span>
                               <div class="input__phone">
-                                    <input type="text" id="registerPhone01" class="input__phone__common">
+                                    <input type="text" id="registerPhone03" class="input__phone__common" maxlength="4" oninput="onPhoneNum()"> 
                               </div>
                         </div>
+                        <span id="errorPhone" class="errorCommon"></span>
                         <div class="phoneNum__common">
                               <span id="phoneNumView" class="phoneNumCommon">000000</span>
-                              <button class="phoneNumButton">인증번호 전송</button>
+                              <button type="button" id="sendPhoneNum" class="phoneNumButton" onclick="onPhoneNumSend(event) "disabled>인증번호 전송</button>
                         </div>
                         <div class="phoneNum__common">
-                              <span id="phoneNumTime" class="phoneNumCommon">3:00</span>
-                              <button class="phoneNumButton phoneNumButton2">인증완료</button>
+                              <span id="phoneNumTime" class="phoneNumCommon">3 : 00</span>
+                              <button id="phoneNumCom" class="phoneNumButton phoneNumButton2" disabled onclick="onPhoneNumCom(event)">인증완료</button>
                         </div>
                         <div class="register__selectBox">
-                              <select name="" id="areaSelect" disabled>
-                                    <option value="">서울</option>
-                                    <option value="">경기</option>
-                                    <option value="">인천</option>
+                              <select name="" id="areaSelect">
+                                    <option value="">지역을 선택하세요.</option>
+                                    <option value="서울">서울</option>
+                                    <option value="경기">경기</option>
+                                    <option value="인천">인천</option>
                               </select>
+                              <span id="errorArea" class="errorCommon"></span>
                         </div>
                         <div class="register__gender">
                               <div class="gerder__box">
-                                    <input type="checkbox" id="girl">
+                                    <input type="radio" name="gender" id="girl">
                                     <label for="girl">여성</label>
                               </div>
                               <div class="gerder__box">
-                                    <input type="checkbox" id="man">
+                                    <input type="radio" name="gender" id="man">
                                     <label for="man">남성</label>
                               </div>
+                              <span id="errorGender" class="errorCommon"></span>
                         </div>
-                        <input type="submit" id="register__submit" value="가입하기">
+                        <input type="submit" id="register__submit" value="가입하기" onclick="registerConfirm(event)" disabled>
                   </form>
             </div>
       </div>
+      <script src="./final.js" type ="text/javascript"></script>
 </body>
 </html>
