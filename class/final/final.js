@@ -34,12 +34,17 @@ const onPhoneNum = () => {
   }
 };
 
-let timerStart = true;
+let timerStart = false;
 let time = 180;
 
 const onPhoneNumSend = (event) => {
   event.preventDefault();
-  timerStart = true;
+  if (timerStart === true) {
+    alert("인증번호 요청중입니다. 잠시 후 다시 요청해주세요.");
+    return false;
+  } else {
+    timerStart = true;
+  }
 
   //인증번호 토큰 생성
 
@@ -81,6 +86,8 @@ const onPhoneNumCom = (event) => {
   event.preventDefault();
   alert("인증이 완료 되었습니다.");
   timerStart = false;
+  document.getElementById("sendPhoneNum").disabled = true;
+  document.getElementById("phoneNumCom").disabled = true;
   document.getElementById("register__submit").disabled = false;
 };
 
