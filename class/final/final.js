@@ -20,6 +20,7 @@ const movePhone02 = () => {
   }
 };
 
+//인증번호 버튼 활성화
 const onPhoneNum = () => {
   let phoneInput01 = document.getElementById("registerPhone01").value;
   let phoneInput02 = document.getElementById("registerPhone02").value;
@@ -34,9 +35,10 @@ const onPhoneNum = () => {
   }
 };
 
-let timerStart = false;
-let time = 180;
+let timerStart = false; //타이머 작동 상태관리
+let time = 180; //타이머 시간 (초)
 
+//인증번호 보내기
 const onPhoneNumSend = (event) => {
   event.preventDefault();
   if (timerStart === true) {
@@ -82,6 +84,7 @@ const onPhoneNumSend = (event) => {
   }, 1000);
 };
 
+//인증완료 버튼
 const onPhoneNumCom = (event) => {
   event.preventDefault();
   alert("인증이 완료 되었습니다.");
@@ -195,6 +198,7 @@ const registerConfirm = (event) => {
     document.getElementById("errorGender").innerText = "";
   }
 
+  //회원가입 완료
   if (isCom === true) {
     alert("코드캠프 회원가입이 완료되었습니다.");
   }

@@ -1,0 +1,29 @@
+
+.box{
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+}
+.box1{
+      background-color: red;
+      transform: translate(50px, 50px);
+      transition: ease-in-out 1s;
+}
+.box2{
+      background-color: orange;
+      transform: skew(15deg, 30deg);
+      transition: ease-in-out 1s;
+}
+.box3{
+      background-color: navy;
+      transform: scale(150%);
+      transition: ease-in-out 2s;
+}
+.box4{
+      background-color: bisque;
+      transform: rotate(360deg);
+      transition: ease-in-out 1s;
+}
+.box5{
+      background-color: blue;
+}
